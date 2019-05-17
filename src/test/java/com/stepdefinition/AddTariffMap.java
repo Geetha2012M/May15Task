@@ -1,5 +1,6 @@
 package com.stepdefinition;
 
+import java.util.List;
 import java.util.Map;
 
 import org.junit.Assert;
@@ -36,21 +37,21 @@ public class AddTariffMap {
 	@When("The user is filling all the datas")
 	public void the_user_is_filling_all_the_datas(DataTable Custdetails) {
 
-		Map<String, String> custdeta = Custdetails.asMap(String.class, String.class);
+		List<Map<String, String>> custdeta = Custdetails.asMaps(String.class,String.class);
 
-		driver.findElement(By.id("rental1")).sendKeys(custdeta.get("monthy rental"));
+		driver.findElement(By.id("rental1")).sendKeys(custdeta.get(1).get("monthy rental"));
 
-		driver.findElement(By.id("local_minutes")).sendKeys(custdeta.get("Free loc min"));
+		driver.findElement(By.id("local_minutes")).sendKeys(custdeta.get(2).get("Free loc min"));
 
-		driver.findElement(By.id("inter_minutes")).sendKeys(custdeta.get("Free Intern min"));
+		driver.findElement(By.id("inter_minutes")).sendKeys(custdeta.get(0).get("Free Intern min"));
 
-		driver.findElement(By.id("sms_pack")).sendKeys(custdeta.get("Free sms"));
+		driver.findElement(By.id("sms_pack")).sendKeys(custdeta.get(3).get("Free sms"));
 
-		driver.findElement(By.id("minutes_charges")).sendKeys(custdeta.get("local per min"));
+		driver.findElement(By.id("minutes_charges")).sendKeys(custdeta.get(3).get("local per min"));
 
-		driver.findElement(By.id("inter_charges")).sendKeys(custdeta.get("Intern per min"));
+		driver.findElement(By.id("inter_charges")).sendKeys(custdeta.get(2).get("Intern per min"));
 
-		driver.findElement(By.id("sms_charges")).sendKeys(custdeta.get("sms per charges"));
+		driver.findElement(By.id("sms_charges")).sendKeys(custdeta.get(1).get("sms per charges"));
 
 	}
 

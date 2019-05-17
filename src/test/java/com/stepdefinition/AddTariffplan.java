@@ -33,21 +33,21 @@ static WebDriver driver;
 
 	   @When("The user is filling all the field")
 	   public void the_user_is_filling_all_the_field(DataTable custdetails) throws Throwable {
-		   List<String> custdet= custdetails.asList(String.class);
+		   List<List<String>> custdet = custdetails.asLists(String.class);
 		   
-		   driver.findElement(By.id("rental1")).sendKeys(custdet.get(0));
+		   driver.findElement(By.id("rental1")).sendKeys(custdet.get(1).get(3));
 		   Thread.sleep(3000);
-		   driver.findElement(By.id("local_minutes")).sendKeys(custdet.get(1));
+		   driver.findElement(By.id("local_minutes")).sendKeys(custdet.get(2).get(2));
 		   Thread.sleep(3000);
-		   driver.findElement(By.id("inter_minutes")).sendKeys(custdet.get(2));
+		   driver.findElement(By.id("inter_minutes")).sendKeys(custdet.get(0).get(1));
 		   Thread.sleep(3000);
-		   driver.findElement(By.id("sms_pack")).sendKeys(custdet.get(3));
+		   driver.findElement(By.id("sms_pack")).sendKeys(custdet.get(1).get(4));
 		   Thread.sleep(3000);
-		   driver.findElement(By.id("minutes_charges")).sendKeys(custdet.get(4));
+		   driver.findElement(By.id("minutes_charges")).sendKeys(custdet.get(3).get(2));
 		   Thread.sleep(3000);
-		   driver.findElement(By.id("inter_charges")).sendKeys(custdet.get(5));
+		   driver.findElement(By.id("inter_charges")).sendKeys(custdet.get(2).get(1));
 		   Thread.sleep(3000);
-		   driver.findElement(By.id("sms_charges")).sendKeys(custdet.get(6));
+		   driver.findElement(By.id("sms_charges")).sendKeys(custdet.get(0).get(2));
 		  
 	       
 	   }
