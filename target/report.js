@@ -1,131 +1,29 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/feature/AddTarPlan.feature");
-formatter.feature({
-  "name": "To Add tariff plan",
-  "description": "  I want to use this template for my feature file",
-  "keyword": "Feature"
-});
-formatter.scenario({
-  "name": "To test add tariff plan messages",
-  "description": "",
-  "keyword": "Scenario"
-});
-formatter.step({
-  "name": "The user is in an telecom page",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "AddTariffMap.the_user_is_in_an_telecom_page()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "The user click the add tariff plan",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "AddTariffMap.the_user_click_the_add_tariff_plan()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "The user is filling all the datas",
-  "rows": [
-    {
-      "cells": [
-        "monthy rental",
-        "Free loc min",
-        "Free Intern min",
-        "Free sms",
-        "local per min",
-        "Intern per min",
-        "sms per charges"
-      ]
-    },
-    {
-      "cells": [
-        "100",
-        "200",
-        "300",
-        "400",
-        "501",
-        "600",
-        "700"
-      ]
-    },
-    {
-      "cells": [
-        "101",
-        "201",
-        "301",
-        "401",
-        "502",
-        "601",
-        "701"
-      ]
-    },
-    {
-      "cells": [
-        "102",
-        "202",
-        "302",
-        "402",
-        "503",
-        "602",
-        "702"
-      ]
-    },
-    {
-      "cells": [
-        "103",
-        "203",
-        "303",
-        "403",
-        "504",
-        "603",
-        "703"
-      ]
-    }
-  ],
-  "keyword": "When "
-});
-formatter.match({
-  "location": "AddTariffMap.the_user_is_filling_all_the_datas(DataTable)"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "The user click the submit button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "AddTariffMap.the_user_click_the_submit_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "The user should see the Congratulation you add Tariff Plan messages",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "AddTariffMap.the_user_should_see_the_Congratulation_you_add_Tariff_Plan_messages()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.uri("src/test/resources/feature/AddTrafScenario.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("src/test/resources/feature/AddTrafScenario.feature");
 formatter.feature({
   "name": "To add the tariff Plan",
   "description": "  I want to use this template for my feature file",
-  "keyword": "Feature"
+  "keyword": "Feature",
+  "tags": [
+    {
+      "name": "@reg1"
+    },
+    {
+      "name": "@reg2"
+    }
+  ]
 });
 formatter.scenarioOutline({
   "name": "To test the add tariff plan messages",
   "description": "",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@smoke"
+    },
+    {
+      "name": "@load"
+    }
+  ]
 });
 formatter.step({
   "name": "The user is in an telecom website",
@@ -201,7 +99,24 @@ formatter.examples({
 formatter.scenario({
   "name": "To test the add tariff plan messages",
   "description": "",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@reg1"
+    },
+    {
+      "name": "@reg2"
+    },
+    {
+      "name": "@smoke"
+    },
+    {
+      "name": "@load"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
 });
 formatter.step({
   "name": "The user is in an telecom website",
@@ -253,10 +168,30 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.after({
+  "status": "passed"
+});
 formatter.scenario({
   "name": "To test the add tariff plan messages",
   "description": "",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@reg1"
+    },
+    {
+      "name": "@reg2"
+    },
+    {
+      "name": "@smoke"
+    },
+    {
+      "name": "@load"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
 });
 formatter.step({
   "name": "The user is in an telecom website",
@@ -308,10 +243,30 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.after({
+  "status": "passed"
+});
 formatter.scenario({
   "name": "To test the add tariff plan messages",
   "description": "",
-  "keyword": "Scenario Outline"
+  "keyword": "Scenario Outline",
+  "tags": [
+    {
+      "name": "@reg1"
+    },
+    {
+      "name": "@reg2"
+    },
+    {
+      "name": "@smoke"
+    },
+    {
+      "name": "@load"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
 });
 formatter.step({
   "name": "The user is in an telecom website",
@@ -363,16 +318,35 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
+formatter.after({
+  "status": "passed"
+});
 formatter.uri("src/test/resources/feature/AddTrafstep.feature");
 formatter.feature({
-  "name": "Add tariff plan",
+  "name": "To Add tariff plan",
   "description": "  I want to use this template for my feature file",
-  "keyword": "Feature"
+  "keyword": "Feature",
+  "tags": [
+    {
+      "name": "@reg"
+    }
+  ]
 });
 formatter.scenario({
   "name": "To test add tariff plan message",
   "description": "",
-  "keyword": "Scenario"
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@reg"
+    },
+    {
+      "name": "@load"
+    }
+  ]
+});
+formatter.before({
+  "status": "passed"
 });
 formatter.step({
   "name": "The user is in an telecom Homepage",
@@ -470,65 +444,7 @@ formatter.match({
 formatter.result({
   "status": "passed"
 });
-formatter.uri("src/test/resources/feature/cucumber00.feature");
-formatter.feature({
-  "name": "Add Customer feature",
-  "description": "  I want to use this template for my feature file",
-  "keyword": "Feature"
-});
-formatter.scenario({
-  "name": "Title of your scenario",
-  "description": "",
-  "keyword": "Scenario"
-});
-formatter.step({
-  "name": "The user is in telecom Homepage",
-  "keyword": "Given "
-});
-formatter.match({
-  "location": "AddCustomer.the_user_is_in_telecom_Homepage()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "The user click on add customer",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "AddCustomer.the_user_click_on_add_customer()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "The user is filling all the fields",
-  "keyword": "When "
-});
-formatter.match({
-  "location": "AddCustomer.the_user_is_filling_all_the_fields()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "The user click on submit button",
-  "keyword": "And "
-});
-formatter.match({
-  "location": "AddCustomer.the_user_click_on_submit_button()"
-});
-formatter.result({
-  "status": "passed"
-});
-formatter.step({
-  "name": "The user should see the id is generated",
-  "keyword": "Then "
-});
-formatter.match({
-  "location": "AddCustomer.the_user_should_see_the_id_is_generated()"
-});
-formatter.result({
+formatter.after({
   "status": "passed"
 });
 });

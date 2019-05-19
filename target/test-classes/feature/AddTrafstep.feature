@@ -1,8 +1,8 @@
-Feature: Add tariff plan
+@reg 
+Feature: To Add tariff plan
   I want to use this template for my feature file
-
- 
-  Scenario: To test add tariff plan message
+@load
+   Scenario: To test add tariff plan message
     Given The user is in an telecom Homepage
     And The user click on add tariff plan
     When The user is filling all the field
@@ -12,3 +12,7 @@ Feature: Add tariff plan
     |103|203|303|403|504|603|703|
     And The user clicks submit button
     Then The user should see the Congratulation you add Tariff Plan message
+    
+    
+   
+   

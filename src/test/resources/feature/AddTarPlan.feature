@@ -1,6 +1,9 @@
+@reg @reg1
+
 Feature: To Add tariff plan
   I want to use this template for my feature file
 
+@smoke @sanity
   Scenario: To test add tariff plan messages
     Given The user is in an telecom page
     And The user click the add tariff plan
