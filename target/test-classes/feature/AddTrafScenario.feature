@@ -2,7 +2,7 @@
 Feature: To add the tariff Plan
   I want to use this template for my feature file
   
-  @smoke @load
+   @load
 
   Scenario Outline: To test the add tariff plan messages
     Given The user is in an telecom website

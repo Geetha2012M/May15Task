@@ -6,8 +6,8 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
-@CucumberOptions(features="src\\test\\resources\\feature",glue="com.stepdefinition",
-              plugin="html:target",dryRun=false,monochrome=true,tags= {"@load"})
+@CucumberOptions(features="src\\test\\resources\\feature\\AddTarPlan.feature",glue="com.stepdefinition",
+              plugin={"html:target","rerun:src/test/resources/failed.txt","json:target/report.json"},dryRun=false,monochrome=true)
 
 public class TestRunner {
 	

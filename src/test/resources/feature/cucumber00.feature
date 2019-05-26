@@ -3,7 +3,7 @@
 Feature: Add Customer feature
   I want to use this template for my feature file
 
-  @smoke
+   @sanity
   Scenario: Title of your scenario
     Given The user is in telecom Homepage
     And The user click on add customer

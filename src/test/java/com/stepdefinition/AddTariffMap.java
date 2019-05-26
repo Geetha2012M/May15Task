@@ -5,7 +5,7 @@ import java.util.Map;
 
 import org.junit.Assert;
 import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
+
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -14,7 +14,7 @@ import io.cucumber.datatable.DataTable;
 
 public class AddTariffMap {
 
-	// one dimensional Map
+	// two dimensional Map
 	
 
 	@Given("The user is in an telecom page")
